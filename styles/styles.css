@@ -1,0 +1,287 @@
+@import url('reset.css');
+@font-face {
+    font-family: vazirNormal;
+    src: url('../fonts/vazir.eot');
+    src: url('../fonts/vazir.eot?#iefix') format('embedded-opentype'), url('../fonts/vazir.woff2') format('woff2'), url('../fonts/vazir.woff') format('woff'), url('../fonts/vazir.ttf') format('truetype');
+    font-weight: normal;
+    font-display: swap;
+}
+
+.clearfix{
+    clear: both;
+}
+
+input {
+    font-family: vazirNormal;
+}
+
+body {
+    font-family: vazirNormal;
+    direction: rtl;
+    background-color: #f0f0f0f0;
+}
+
+.container {
+    width: 1100px;
+    /* height: 200px; */
+    /* background-color: red; */
+    margin: auto;
+    position: relative;
+}
+
+/* header */
+
+#header {
+    margin-top: 20px;
+}
+
+#header .logo img {
+    width: 90px;
+}
+
+#header .titles {
+    /* background-color: green; */
+    display: inline-block;
+    position: relative;
+    top: -15px;
+    right: 10px
+}
+
+#header .titles h1 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#header .titles h2 {
+    font-size: 15px;
+}
+
+#header .users {
+    position: absolute;
+    left: 0;
+    top: 035px;
+}
+
+#header .users .button {
+    text-decoration: none;
+    padding: 7px 15px;
+    color: white;
+    border-radius: 3px;
+}
+
+#header .users .login {
+    background-color: rgb(59, 69, 202);
+    transition: 250ms;
+}
+
+#header .users .login:hover {
+    background-color: rgb(37, 48, 196);
+    transition: 250ms;
+}
+
+#header .users .register {
+    background-color: rgb(44, 99, 44);
+    transition: 250ms;
+}
+
+#header .users .register:hover {
+    background-color: rgb(10, 66, 10);
+    transition: 250ms;
+}
+
+/* nav style */
+
+#nav {
+    margin-top: 20px;
+    background-color: #1d2937;
+}
+
+#nav ul li {
+    display: inline-block;
+}
+
+#nav ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    padding: 20px 15px;
+    display: inline-block;
+    transition: 250ms;
+}
+
+#nav ul li a:hover {
+    background-color: #28394d;
+}
+
+/* content */
+
+#content {
+    /* background-color: red; */
+    float: right;
+    width: 70%;
+    margin-top: 20px;
+}
+
+#content .post-item {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+
+.post-item .post-title {
+    font-weight: bold;
+    border-bottom: 2px dashed #ccc;
+    padding: 15px;
+    font-size: 30px;
+}
+
+.post-item .post-image {
+    float: right;
+    margin: 10px;
+}
+
+.post-item .post-image img {
+    width: 300px;
+    height: 200px;
+    border: 2px solid gray;
+}
+
+.post-item .post-content {
+    padding: 10px;
+    line-height: 25px;
+    /* height: 240px; */
+    /* background-color: red; */
+}
+
+.post-item .post-content p {
+    height: 230px;
+    overflow: hidden;
+}
+
+.post-item .post-data {
+    background-color: #f0f0f0f0;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+    position: relative;
+    font-size: 14px;
+}
+
+.post-item .post-data .read-more {
+    position: relative;
+    left: 10px;
+    text-decoration: none;
+    background-color: #212121;
+    color: white;
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 12px;
+    float: left;
+    top: -4px;
+    left: -4px;
+    transition: 250ms;
+}
+
+.post-item .post-data .read-more:hover {
+    background-color: #020202;
+    transition: 250ms;
+}
+
+/* sidebar */
+
+#sidebar {
+    float: left;
+    width: 29%;
+    margin-top: 20px;
+}
+
+.sidebar-item {
+    background-color: white;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.sidebar-item .sidebar-header {
+    border-radius: 3px 3px 0 0;
+    background-color: #1d2937;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.sidebar-item .sidebar-content {
+    padding: 10px;
+}
+
+.categories ul li a {
+    text-decoration: none;
+    color: #212121;
+    display: inline-block;
+    margin-bottom: 10px;
+    padding-right: 10px;
+    border-right: 2px solid #1d2937;
+    transition: 250ms;
+}
+
+.categories ul li a:hover {
+    border-right: 3px solid #1d2937;
+    transition: 250ms;
+    margin-right: 5px;
+}
+
+#sidebar .newsletter p {
+    width: 200px;
+    margin: auto;
+    text-align: center;
+    font-size: 17px;
+    line-height: 25px;
+}
+
+#sidebar .newsletter form {
+    text-align: center;
+}
+
+#sidebar .newsletter .email-input {
+    padding: 5px;
+    margin-top: 10px;
+    width: 90%;
+    direction: ltr;
+    border-style: solid;
+    border-radius: 3px;
+    transition: 250ms;
+}
+
+#sidebar .newsletter .email-input:focus {
+    outline: none;
+    border-color: gray;
+    transition: 250ms;
+}
+
+#sidebar .newsletter .submit-btn {
+    background-color: #2E7D32;
+    border: none;
+    color: white;
+    margin-top: 10px;
+    padding: 5px 15px;
+    border-radius: 4px;
+    transition: 250ms;
+}
+
+#sidebar .newsletter .submit-btn:hover {
+    background-color: #1B5E20;
+    cursor: pointer;
+    transition: 250ms;
+}
+
+/* footer */
+
+#footer {
+    background-color: #212121;
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+    padding: 15px;
+    /* display: none; */
+
+}
